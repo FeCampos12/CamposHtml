@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ola Mundo</title>
+    <!-- Codigo de css -->
     <style>
         h1{
             font-family: Arial;
@@ -12,10 +13,78 @@
             color:blue;
             text-shadow: 2px 2px 2px black;
         }
+        a{
+            display: block;
+        }
     </style>
 </head>
 <body>
-    <h1>Olá Mundo!</h1>
+    <h1>Olá Mundo!</h1><br><!-- tag de quebra de linha -->
     <h2>Como vcs estão</h2>
+
+                              <!-- UTILIZAÇÃO DE ÂNCORA-->
+
+    <a href="http:www.youtube.com/cfbcursos"> Canal Fb cursos </a>
+    <a href="apresentacao.html" target="_blank"></a>
+    <a href="teste/aula3.html" target="_blank"></a><!--ancorar Arquivo dentro de uma pasta-->
+    <a href="../CamposHtml/aula3.html" target="_blank"></a><!--ancorar Arquivo fora de uma pasta-->
+    <a href="http:www.youtube.com/cfbcursos"target="_blank" rel="external" media="all" hreflang="pt" type="text/html"> Canal</a>
+    <a href="logo.rar" download="imagen"> download da imagem </a> <!-- serve para indicar quese fara um donload o que vem dopoes entre aspar e para mudar o nome ao fazer o download-->
+    <a href="mailto:sme281992@gmail.com?cc=sme281992@gmail.com&bcc=sme281992@gmail.com&subject= CFB%Cursos
+    &body=curso%de%HTML%Completo%Proficional"> enviar email </a>
+    <a href="javascript:alert('cfb.cursos');">Canal</a>
+    <a hret="#fim" id="topo">TOPO</a>
+    <a hret="#top" id="fim">FIM</a> <!--Um leva para o outro-->
+
+    <!--
+        Dom Interface
+        interface HTMLAnchorElements : HTMLElement {
+            atribute DOMString target;
+            atribute DOMString download;
+            atribute DOMString rel;
+            atribute DOMString rev;
+            [SameObject, PutForwards=value] readonly attribute DOMtokenList relList;
+            atribute DOMString hreflang;
+            atribute DOMString type;
+            atribute DOMString text;
+            atribute DOMString referrerPolicy;
+        };
+        HTMLAnchorElements implements HTMLHyperlinkElementUtils;
+
+        TARGET
+            _blank
+            _parent
+            _self
+            _top
+            framename
+        Media
+            all-(Para todos despositivos)
+            aural - Sintetizadores de fala auditiva
+            braille-Dispositivos de Braille
+            projection- projetores
+            print- inpressoras
+            screen- telas de computadores
+            tv- televisores
+        REL
+            alternar=Fornece um link para uma representação alternativa do documento (por exemplo imprimir pagina)
+            author= Fornece um link para o autor do documento
+            bookmark= URL permanente usado para bookmarking
+            external= indica que o documento referenciado não faz parte do nosso site que o documento atual
+            help= fornece um link para o documento de ajuda
+            licence= fornece um linque para informações de direitos autorais
+            next= fornece um link para o procimo documento da serie
+            nofollow= Link para um documento não endossado, como um link pago
+                ("nofollow" é usado pelo google para especificar que o robo de pesquisa do google não deve seguir esse link)
+            noreferrer = Requer que o navegador não envie um cabeçalho de referência HTTP se o usuario seguir o hyperlink
+            noopener = requer que qualquer contexto de navegação criado seguindo o hyperlink não deva ter um contexto de
+            navegação de abertura
+            prev = o documento anterior em uma seleção
+            search = link de pesquisa para uma ferramenta de pesquisa de documento
+            tag = uma tag (keyword) para o documento atual
+
+        TYPE
+            http://www.iana.org/assignments/media-types.xhtml
+
+    -->
 </body>
 </html>
