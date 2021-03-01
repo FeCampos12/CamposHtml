@@ -36,12 +36,36 @@
         canvas{
             border:1px solid black;
         }
+        summary::-webkit-details-marker{
+            color:rgba(207, 240, 21, 0.692);
+        }
+        details[open] summary::-webkit-details-marker{
+            color:rgb(31, 180, 81);
+        }
+        div{
+            background-color: rgb(221, 192, 114);
+            color: chocolate;
+            border-radius: 10px;
+            border:1px solid rgb(12, 12, 12);
+            margin-right: 10px;
+        }
+        .prince{
+            display: flex;
+        }
     </style>
     <script>
         function desenha(){
             var canvas = document.getElementById('canvas')
             var ctx = canvas.getContext('2d');
             ctx.fillRect(25,25,100,100)
+        }
+        function AbrirDialogo(){
+            document.getElementById('d1').setAttribute("open","")
+            
+        }
+        function FecharDialogo(){
+            document.getElementById('d1').removeAttribute("open")
+           
         }
     </script>
 </head>
@@ -245,5 +269,54 @@
     <h1>TAG DEL E INS</h1>
     <P>A tag del serve para informar ao usuario que o conteudo foi <del cite="perdeo a validade">eliminado</del></P>
     <p>A tage ins informa ao usuario que o conteudo foi <ins datetime="01/03/2021">inserido</ins></p>
+
+                                                   <!-- TAG DETAILS E SUMMARY -->
+
+    <h1>TAG DETAILS E SUMMARY</h1>
+
+    <details>
+        <summary>Cursos a Fazer</summary>
+        <p>HTML COMPLETO</p>
+        <p>Css</p>
+        <p>Java Script</p>
+        <p>Php</p>
+    </details>
+
+    
+                                                   <!-- TAG DFN -->
+
+    <h1>TAG DFN</h1>
+    <p><dfn title="definição de um conteudo">DFN</dfn>:Represena explicação do termo, tipo a definição de algo</p>
+                                                    
+                                                    <!-- TAG DIALOG -->
+
+      <h1>TAG DIALOG</h1>
+
+      <button onclick="AbrirDialogo()" >Abrir</button> <button onclick="FecharDialogo()" type="submit">Fechar</button>
+      <dialog id="d1" open>
+          <p>esse atributo serve para criar uma caixa de dialogo</p>
+      </dialog>
+
+                                                     <!-- TAG DIV -->
+
+       <h1>TAG DIV</h1>
+       <div class="prince"> 
+           <div>
+                <p>
+               Serve para dividir o documento ou o conteudo da pagina  em divisão
+                </p>
+            </div>
+            <div>
+                <p>
+            Serve para dividir o documento ou o conteudo da pagina  em divisão
+                </p>
+            </div>
+            <div>
+                <p>
+            Serve para dividir o documento ou o conteudo da pagina  em divisão
+                </p>
+            </div>
+        </div>
+      
 </body>
 </html>
