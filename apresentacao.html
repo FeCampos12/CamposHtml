@@ -30,7 +30,20 @@
             margin-top: 50px;
 
         }
+        p{
+            line-height: 0px;
+        }
+        canvas{
+            border:1px solid black;
+        }
     </style>
+    <script>
+        function desenha(){
+            var canvas = document.getElementById('canvas')
+            var ctx = canvas.getContext('2d');
+            ctx.fillRect(25,25,100,100)
+        }
+    </script>
 </head>
 <body>
     <h1>Olá Mundo!</h1><br><!-- tag de quebra de linha -->
@@ -156,13 +169,13 @@
     <h1>Audio</h1>
     <audio autoplay src="audio/music.mp3" controls loop></audio>
 
-                                <!-- TAG B, bOLAD FORMATAÇÃO DE NEGLITO-->
+                                <!-- TAG B, BLOAD FORMATAÇÃO DE NEGLITO-->
 
     <h1>B, bOLAD FORMATAÇÃO DE NEGLITO</h1>
     <p>Serve para <b>destacar</b> textos e palavras</p>
 
                                             <!-- TAG BASE -->
-    <h1>TAB BASE</h1>
+    <h1>TAG BASE</h1>
     <p> Facilita a porcura de link e se utilisa dentro do head</p>
 
     <!--
@@ -174,15 +187,63 @@
         }
     -->
                                              <!-- TAG BDO -->
-    <h1>TAB BDO</h1>
+    <h1>TAG BDO</h1>
 
     <p>Essa tag só tem um atributo que e o "dir" composto po ltr"direita" e rtr "esquerda" </p>
     <bdo dir="rtl">Tag que controla a direção</bdo>
 
                                              <!-- TAG BLOCKQUOTE E CITE -->
-    <h1>TAB BLOCKQUOTE E CITE</h1>
+    <h1>TAG BLOCKQUOTE E CITE</h1>
 
-    <p>Essa tag para citação </p>
-          
+    <blockquote>
+        <p>Essa tag para citação </p>
+        <cite><p>define obras que não nos pertecem, mas só se pode citar texto</p></cite>
+    </blockquote>
+    
+
+    <!--
+        DOM Interface
+        Interface HTMLBaseElement
+        HTMLElement{
+            atribut DOMString cite;
+        }
+    -->
+                                                    <!-- TAG BR -->
+    <h1>TAG BR</h1>
+    <p>Essa tag serve para quebrar a linha o seu display é inline</p><br>
+
+                                                    <!-- TAG BUTTON -->
+
+    <h1>TAG BUTTON</h1>
+    <button type="submit" form="f_cadastro" onclick="alert('Ola Pessoal');">FSC</button>
+    <button type="button">AngoNante</button>
+
+                                                     <!-- TAG CANVAS -->
+
+     <h1>TAG CANVAS</h1>
+
+     <canvas width="500px" height="500px" id="canvas">
+         seu navegador são suporta o canvas
+     </canvas>
+     <script>desenha();</script>
+
+                                                   <!-- TAG COD E PRE -->
+
+     <h1>TAG COD E PRE</h1>
+     <pre>
+         <code>Serve para demostrar
+          que o conteudo e um codigo de 
+          programação
+        </code>
+        tudo que tiver dentro
+             de pre e apresentado 
+                da forma que vc escrever
+    </pre>
+     
+                                                  <!-- TAG DEL E INS -->
+
+    <h1>TAG DEL E INS</h1>
+    <P>A tag del serve para informar ao usuario que o conteudo foi <del cite="perdeo a validade">eliminado</del></P>
+    <p>A tage ins informa ao usuario que o conteudo foi <ins datetime="01/03/2021">inserido</ins></p>
 </body>
 </html>
