@@ -16,6 +16,15 @@
         a{
             display: block;
         }
+        article{
+            padding:15px;
+            border:1px solid black;
+            border-radius: 15px;
+            background-color: burlywood;
+            margin-bottom: 10px;
+            margin-top: 50px;
+
+        }
     </style>
 </head>
 <body>
@@ -24,6 +33,7 @@
 
                               <!-- UTILIZAÇÃO DE ÂNCORA-->
 
+    <h1>Âncora</h1>
     <a href="http:www.youtube.com/cfbcursos"> Canal Fb cursos </a>
     <a href="apresentacao.html" target="_blank"></a>
     <a href="teste/aula3.html" target="_blank"></a><!--ancorar Arquivo dentro de uma pasta-->
@@ -86,5 +96,56 @@
             http://www.iana.org/assignments/media-types.xhtml
 
     -->
+
+                                         <!-- TAG UTILIZAÇÃO DE ABREVIAÇÃO-->
+
+    <h1>Abreviação</h1>
+    <P>Curso de <abbr title="Hypertext Markup Language">HTML</abbr> COMPLETO E PROFICIONAL DO <abbr title="CFB Cursos">CFBC</abbr></P>
+                                          
+                                          <!-- TAG UTILIZAÇÃO DE Enderesso-->
+    <h1>Endereço</h1>
+    <footer>
+        <address>
+            Autor: Fernando Campos <br>
+            se escreva nesse canal <a href="http:www.youtube.com/cfbcursos"target="_blank"> Canal do Youtube</a>
+        </address>
+    </footer>
+                                           <!-- TAG DE AREA E MAPA, MAOEAMENTO-->
+                                           <h1>Mapeamento</h1>
+    <img src="imagem/xadrez.jpg" width="300" height="300" usemap="#mapaxadrez">
+    <map name="mapaxadrez">
+        <area alt="quadrado branco" shape="poly" href="#" coords="0,0,0,300,300,300,300,0">
+        <area alt="quadrado Preto" shape="poly" href="#" coords="0,0,0,300,300,300,300,0">
+    </map>
+
+    <!--
+        interface HTMLAnchorElements : HTMLElement {
+            atribute DOMString alt;
+            atribute DOMString coords; rect basta informar os dados das duas diagonas, circulo centro e o raio
+            atribute DOMString shape;
+            atribute DOMString target;
+            atribute DOMString download;
+            atribute DOMString rel;
+            [SameObject, PutForwards=value] readonly attribute DOMtokenList relList;
+            atribute DOMString hreflang;
+            atribute DOMString type;
+            atribute DOMString referrerPolicy;
+        };
+        HTMLAnchorElements implements HTMLHyperlinkElementUtils;
+    -->
+                                     <!-- NOVA TAG ARTICLE-->
+    
+    <article>
+        <h1>Article</h1>
+        <p>esta tag nova serve para defifir uma area do site</p>
+    </article>
+                                     <!-- NOVA TAG Aside-->
+
+    <h1>Aside</h1>
+    <aside>
+        <p>Representa o conteodo de navegação de pagina lateral, ou caixa lateral</p>
+    </aside>
+
+
 </body>
 </html>
