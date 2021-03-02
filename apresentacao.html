@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fernando Campos">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
     <title>HTML TAGS COMPLETO</title> 
     <!--
         <base href="http://www.cfbcursod.com.br/"> 
@@ -17,6 +20,7 @@
             font-size: 30pt;
             color:blue;
             text-shadow: 2px 2px 2px black;
+            font-family: 'Stick', sans-serif;
         }
         a{
             display: block;
@@ -50,6 +54,20 @@
             margin-right: 10px;
         }
         .prince{
+            display: flex;
+        }
+        form{
+            background-color: burlywood;
+            border-radius: 5px;
+            border:1px solid black;
+            display:inline-block;
+            padding: 10px;
+        }
+        input{
+            display: block;
+            margin-bottom: 10px;
+        }
+        #botoes{
             display: flex;
         }
     </style>
@@ -317,6 +335,177 @@
                 </p>
             </div>
         </div>
-      
+
+                                                     <!-- TAG DL DT DD -->
+
+       <h1>TAG DL DT DD</h1>
+
+       <p> Esta tag de lista de definição</p>
+       <dl>
+           <dt>Html</dt>
+           <dd>Principal linguagem de programação web</dd>
+           <dt>CSS</dt>
+           <dd>Principal linguagem de formatação de web</dd>
+       </dl>
+
+                                                       <!-- TAG EM -->
+
+       <h1>TAG EM</h1>
+       <p>Esta tag serve para dar <em>ênfase</em> em um paragrafo</p>
+
+                                                    <!-- TAG EMBED -->
+
+        <h1>TAG EMBED</h1>
+        <p> 
+            Serve para incorporar conteudo que normalmente não é html, representa uma 
+            area com um arquivo externo
+        </p>
+
+        <embed src="audio/music.mp3">
+        
+                                                     <!-- TAG  FIGURE -->
+
+        <h1>TAG FIGURE</h1>
+
+        <figure>
+             <P>
+                 Serve para adicionar elementos dentro de um contener, pode-se usar colocando uma imagem 
+                 e por baixo a legenda, usado quando se pretende colocar legenda
+             </P>
+             <figcaption>
+                 esta é a legenda deste contiudo
+             </figcaption>
+        </figure>
+
+                                                 <!-- NOVA TAG  FOOTER -->
+
+         <h1>NOVA TAG FOOTER</h1>
+ 
+        <footer>
+            <p>Tag para rorapé</p>
+        </footer>
+
+                                                 <!-- TAG  FORMULÁRIO -->
+
+         <h1>TAG FORM</h1>
+
+         <form name="f_cadastro" action="#" method="get">
+             <label>Nome:</label>
+             <input type="text" name="f_nome" value="escreve" maxlength="20" size="25">
+             <di id="botoes">
+                 <input type="button" name="" value="nada"> 
+                <input type="reset" name="">
+                <input type="submit" name="f_nome"> 
+            </di>
+            <label>senha:</label>
+            <input type="password" pattern="[a-zA-Z0-9]{5}">
+            <label>Sites a fazer</label>
+            <input type="checkbox" name="xadrez" value="xadrez">Xadrez
+            <input type="checkbox" name="pitanga" value="pitanga">pitanga
+            <input type="checkbox" name="errita" value="nante">Nãoteerrita<br>
+            <label>Vai continuar ou não:</label>
+            <input type="radio" name="tem" value="sim" checked>Sim
+            <input type="radio" name="tem" value="nao">Não
+
+         </form>
+
+         <form name="f_cadastro" action="#" method="get">
+            <label>Hora:</label>
+            <input type="time" name="tempo" max="09:30" min="05:00" required>
+            <input type="date" name="data" max="2021-06-03"  required>
+            <input type="datetime-local" name="datatempo">
+            <input type="month" name="mes" >
+            <input type="week" name="semana">
+            <input type="hidden" name="invisivel" valur="ocultado">
+            <input type="submit" name="f_nome">
+
+        </form>
+
+        <form name="f_cadastro" action="#" method="get">
+            <label>Seleciona uma cor:</label>
+            <input type="color"name="cor">
+            <fieldset disabled>
+                <legend>Dados1</legend>
+                <input type="email" name="email">
+                <input type="tel" name="telefone" pattern="\([0-9]{3}\)[9]{1}[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                placeholder="(xxx)9xx-xx-xx-xx">
+                <input type="submit" name="f_nome">
+            </fieldset>
+                <input type="image" src="imagem/livro.png" name="imagen">
+                <label>Escolha um número</label>
+                <input type="number" step="2" min="" max="">
+                <label>Pesquisa</label>
+                <input type="search" name="Pesquisa">
+        </form>
+
+        <form name="f_cadastro" action="#" method="get" enctype="multipart/form-data">
+            <label>escolha um arquivo:</label>
+            
+            <input type="file" name="arquivo" multiple accept=".jpg,.gif.png">
+            <label>Digite a url da pagina:</label>
+            <input type="url" name="url">
+            <select name="selecor" >
+                <option value="b">Branco</option>
+                <option value="p">Preto</option>
+                <option>Azul</option>
+                <option>Vermelho</option>
+                <option>Preto</option>
+            </select>
+
+            <input list="cores" name="lista">
+            <datalist id="cores"><!--O id de datalist tem que ser igual a descrição de list do input-->
+                <option value="b">Branco</option>
+                <option value="p">Preto</option>
+                <option>Azul</option>
+                <option>Vermelho</option>
+                <option>Preto</option>
+            </datalist>
+            <textarea name="area" cols="50" rows="10" maxlength="50" autofocus></textarea>
+            
+            <input type="submit" name="f_nome">
+        </form>
+        <!--
+            file
+                multiple (boolean)
+                accept=".doc,.docx,"
+                accept="application/msword"
+                accept="image/*,.pdf"
+                accept=".jpg,.gif,.png"
+                accept="image/jpg, image/gif,image/png"
+            url
+                placeholder="https://cfbcursos.com.br"
+                pattern="https://.*"
+
+        -->
+                                       <!-- TAG  H -->
+
+         <h1>TAG H </h1>
+         <h2>TAG H</h2>
+         <h3>TAG H</h3>
+         <h4>TAG H</h4>
+         <h5>TAG H</h5>
+         <h6>TAG H</h6>
+         <p> Tag para Titulo </p>
+
+                                   <!-- GOOGLE FONTES -->
+
+          <h1>GOOGLE FONTES </h1>
+
+                                 <!-- NOVA TAG HEADER -->
+
+            <h1>NOVA TAG HEADER</h1>
+            <p>Tage usada para cabaçalho  do conteudo</p>
+
+                                  <!-- TAG HR -->
+
+            <h1>TAG HR</h1>
+            <p>Tage usada para fazer uma divizão horizoltao de conteudo</p>
+            <hr>
+
+                                    <!-- TAG I -->
+
+            <h1>TAG I</h1>
+            <p>Tage usada para tranformar o texto em <i>itálico</i></p>
+            <hr>
 </body>
 </html>
