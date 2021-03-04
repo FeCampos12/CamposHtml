@@ -5,8 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Fernando Campos">
+    <meta name="copyright" content="2021 Fernando">
+    <meta name="Keywords" content="">
+    <!--<meta http-equiv="refresh" content="7,url=http://www.cfbcursos.com.br">-->
+    <meta name="robot" content="index">
+    <meta name="rating" content="general">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="icon" sizes="32x32" href="imagem/livro.png">
     <title>HTML TAGS COMPLETO</title> 
     <!--
         <base href="http://www.cfbcursod.com.br/"> 
@@ -70,6 +77,16 @@
         #botoes{
             display: flex;
         }
+        iframe{
+            width: 300px;
+            height: 300px;
+        }
+        td{
+            border:1px solid black;
+        }
+        ul{
+            list-style-type: georgian;
+        }
     </style>
     <script>
         function desenha(){
@@ -86,6 +103,7 @@
            
         }
     </script>
+    <noscript>Boa tarde</noscript>
 </head>
 <body>
     <h1>Olá Mundo!</h1><br><!-- tag de quebra de linha -->
@@ -94,7 +112,7 @@
                               <!-- UTILIZAÇÃO DE ÂNCORA-->
 
     <h1>Âncora</h1>
-    <a href="http:www.youtube.com/cfbcursos"> Canal Fb cursos </a>
+    <a href="Div2.html" target="frame"> Canal Fb cursos </a>
     <a href="apresentacao.html" target="_blank"></a>
     <a href="teste/aula3.html" target="_blank"></a><!--ancorar Arquivo dentro de uma pasta-->
     <a href="../CamposHtml/aula3.html" target="_blank"></a><!--ancorar Arquivo fora de uma pasta-->
@@ -262,11 +280,11 @@
 
                                                      <!-- TAG CANVAS -->
 
-     <h1>TAG CANVAS</h1>
+    <h1>TAG CANVAS</h1>
 
-     <canvas width="500px" height="500px" id="canvas">
+    <canvas width="500px" height="500px" id="canvas">
          seu navegador são suporta o canvas
-     </canvas>
+    </canvas>
      <script>desenha();</script>
 
                                                    <!-- TAG COD E PRE -->
@@ -308,162 +326,159 @@
                                                     
                                                     <!-- TAG DIALOG -->
 
-      <h1>TAG DIALOG</h1>
+    <h1>TAG DIALOG</h1>
 
-      <button onclick="AbrirDialogo()" >Abrir</button> <button onclick="FecharDialogo()" type="submit">Fechar</button>
-      <dialog id="d1" open>
-          <p>esse atributo serve para criar uma caixa de dialogo</p>
-      </dialog>
+    <button onclick="AbrirDialogo()" >Abrir</button> <button onclick="FecharDialogo()" type="submit">Fechar</button>
+    <dialog id="d1" open>
+        <p>esse atributo serve para criar uma caixa de dialogo</p>
+    </dialog>
 
                                                      <!-- TAG DIV -->
 
-       <h1>TAG DIV</h1>
-       <div class="prince"> 
-           <div>
-                <p>
+    <h1>TAG DIV</h1>
+    <div class="prince"> 
+        <div>
+            <p>
                Serve para dividir o documento ou o conteudo da pagina  em divisão
-                </p>
-            </div>
-            <div>
-                <p>
-            Serve para dividir o documento ou o conteudo da pagina  em divisão
-                </p>
-            </div>
-            <div>
-                <p>
-            Serve para dividir o documento ou o conteudo da pagina  em divisão
-                </p>
-            </div>
+            </p>
         </div>
+        <div>
+            <p>
+                Serve para dividir o documento ou o conteudo da pagina  em divisão
+            </p>
+        </div>
+        <div>
+            <p>
+                Serve para dividir o documento ou o conteudo da pagina  em divisão
+            </p>
+        </div>
+    </div>
 
-                                                     <!-- TAG DL DT DD -->
+                                                 <!-- TAG DL DT DD -->
 
-       <h1>TAG DL DT DD</h1>
+    <h1>TAG DL DT DD</h1>
 
-       <p> Esta tag de lista de definição</p>
-       <dl>
-           <dt>Html</dt>
-           <dd>Principal linguagem de programação web</dd>
-           <dt>CSS</dt>
-           <dd>Principal linguagem de formatação de web</dd>
-       </dl>
+    <p> Esta tag de lista de definição</p>
+    <dl>
+        <dt>Html</dt>
+        <dd>Principal linguagem de programação web</dd>
+        <dt>CSS</dt>
+        <dd>Principal linguagem de formatação de web</dd>
+    </dl>
 
-                                                       <!-- TAG EM -->
+                                                    <!-- TAG EM -->
 
-       <h1>TAG EM</h1>
-       <p>Esta tag serve para dar <em>ênfase</em> em um paragrafo</p>
+    <h1>TAG EM</h1>
+    <p>Esta tag serve para dar <em>ênfase</em> em um paragrafo</p>
 
                                                     <!-- TAG EMBED -->
 
-        <h1>TAG EMBED</h1>
-        <p> 
-            Serve para incorporar conteudo que normalmente não é html, representa uma 
-            area com um arquivo externo
-        </p>
+    <h1>TAG EMBED</h1>
+    <p> 
+        Serve para incorporar conteudo que normalmente não é html, representa uma 
+        area com um arquivo externo
+    </p>
 
-        <embed src="audio/music.mp3">
+    <embed src="audio/music.mp3">
         
                                                      <!-- TAG  FIGURE -->
 
-        <h1>TAG FIGURE</h1>
+    <h1>TAG FIGURE</h1>
 
-        <figure>
-             <P>
-                 Serve para adicionar elementos dentro de um contener, pode-se usar colocando uma imagem 
-                 e por baixo a legenda, usado quando se pretende colocar legenda
-             </P>
-             <figcaption>
-                 esta é a legenda deste contiudo
-             </figcaption>
-        </figure>
+    <figure>
+        <P>
+            Serve para adicionar elementos dentro de um contener, pode-se usar colocando uma imagem 
+            e por baixo a legenda, usado quando se pretende colocar legenda
+        </P>
+        <figcaption>
+            esta é a legenda deste contiudo
+        </figcaption>
+    </figure>
 
                                                  <!-- NOVA TAG  FOOTER -->
 
-         <h1>NOVA TAG FOOTER</h1>
+    <h1>NOVA TAG FOOTER</h1>
  
-        <footer>
-            <p>Tag para rorapé</p>
-        </footer>
+    <footer>
+        <p>Tag para rorapé</p>
+    </footer>
 
                                                  <!-- TAG  FORMULÁRIO -->
 
-         <h1>TAG FORM</h1>
+    <h1>TAG FORM</h1>
 
-         <form name="f_cadastro" action="#" method="get">
-             <label>Nome:</label>
-             <input type="text" name="f_nome" value="escreve" maxlength="20" size="25">
-             <di id="botoes">
-                 <input type="button" name="" value="nada"> 
-                <input type="reset" name="">
-                <input type="submit" name="f_nome"> 
-            </di>
-            <label>senha:</label>
-            <input type="password" pattern="[a-zA-Z0-9]{5}">
-            <label>Sites a fazer</label>
-            <input type="checkbox" name="xadrez" value="xadrez">Xadrez
-            <input type="checkbox" name="pitanga" value="pitanga">pitanga
-            <input type="checkbox" name="errita" value="nante">Nãoteerrita<br>
-            <label>Vai continuar ou não:</label>
-            <input type="radio" name="tem" value="sim" checked>Sim
-            <input type="radio" name="tem" value="nao">Não
+    <form name="f_cadastro" action="#" method="get">
+        <label>Nome:</label>
+        <input type="text" name="f_nome" value="escreve" maxlength="20" size="25">
+        <di id="botoes">
+            <input type="button" name="" value="nada"> 
+            <input type="reset" name="">
+            <input type="submit" name="f_nome"> 
+        </di>
+        <label>senha:</label>
+        <input type="password" pattern="[a-zA-Z0-9]{5}">
+        <label>Sites a fazer</label>
+        <input type="checkbox" name="xadrez" value="xadrez">Xadrez
+        <input type="checkbox" name="pitanga" value="pitanga">pitanga
+        <input type="checkbox" name="errita" value="nante">Nãoteerrita<br>
+        <label>Vai continuar ou não:</label>
+        <input type="radio" name="tem" value="sim" checked>Sim
+        <input type="radio" name="tem" value="nao">Não
+    </form>
 
-         </form>
+    <form name="f_cadastro" action="#" method="get">
+        <label>Hora:</label>
+        <input type="time" name="tempo" max="09:30" min="05:00" required>
+        <input type="date" name="data" max="2021-06-03"  required>
+        <input type="datetime-local" name="datatempo">
+        <input type="month" name="mes" >
+        <input type="week" name="semana">
+        <input type="hidden" name="invisivel" valur="ocultado">
+        <input type="submit" name="f_nome">
+    </form>
 
-         <form name="f_cadastro" action="#" method="get">
-            <label>Hora:</label>
-            <input type="time" name="tempo" max="09:30" min="05:00" required>
-            <input type="date" name="data" max="2021-06-03"  required>
-            <input type="datetime-local" name="datatempo">
-            <input type="month" name="mes" >
-            <input type="week" name="semana">
-            <input type="hidden" name="invisivel" valur="ocultado">
+    <form name="f_cadastro" action="#" method="get">
+        <label>Seleciona uma cor:</label>
+        <input type="color"name="cor">
+        <fieldset disabled>
+            <legend>Dados1</legend>
+            <input type="email" name="email">
+            <input type="tel" name="telefone" pattern="\([0-9]{3}\)[9]{1}[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+             placeholder="(xxx)9xx-xx-xx-xx">
             <input type="submit" name="f_nome">
+        </fieldset>
+        <input type="image" src="imagem/livro.png" name="imagen">
+        <label>Escolha um número</label>
+        <input type="number" step="2" min="" max="">
+        <label>Pesquisa</label>
+        <input type="search" name="Pesquisa">
+    </form>
 
-        </form>
-
-        <form name="f_cadastro" action="#" method="get">
-            <label>Seleciona uma cor:</label>
-            <input type="color"name="cor">
-            <fieldset disabled>
-                <legend>Dados1</legend>
-                <input type="email" name="email">
-                <input type="tel" name="telefone" pattern="\([0-9]{3}\)[9]{1}[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
-                placeholder="(xxx)9xx-xx-xx-xx">
-                <input type="submit" name="f_nome">
-            </fieldset>
-                <input type="image" src="imagem/livro.png" name="imagen">
-                <label>Escolha um número</label>
-                <input type="number" step="2" min="" max="">
-                <label>Pesquisa</label>
-                <input type="search" name="Pesquisa">
-        </form>
-
-        <form name="f_cadastro" action="#" method="get" enctype="multipart/form-data">
-            <label>escolha um arquivo:</label>
+    <form name="f_cadastro" action="#" method="get" enctype="multipart/form-data">
+        <label>escolha um arquivo:</label>
             
-            <input type="file" name="arquivo" multiple accept=".jpg,.gif.png">
-            <label>Digite a url da pagina:</label>
-            <input type="url" name="url">
-            <select name="selecor" >
-                <option value="b">Branco</option>
-                <option value="p">Preto</option>
-                <option>Azul</option>
-                <option>Vermelho</option>
-                <option>Preto</option>
-            </select>
+        <input type="file" name="arquivo" multiple accept=".jpg,.gif.png">
+        <label>Digite a url da pagina:</label>
+        <input type="url" name="url">
+        <select name="selecor" >
+            <option value="b">Branco</option>
+            <option value="p">Preto</option>
+            <option>Azul</option>
+            <option>Vermelho</option>
+            <option>Preto</option>
+        </select>
 
-            <input list="cores" name="lista">
-            <datalist id="cores"><!--O id de datalist tem que ser igual a descrição de list do input-->
-                <option value="b">Branco</option>
-                <option value="p">Preto</option>
-                <option>Azul</option>
-                <option>Vermelho</option>
-                <option>Preto</option>
-            </datalist>
-            <textarea name="area" cols="50" rows="10" maxlength="50" autofocus></textarea>
-            
-            <input type="submit" name="f_nome">
-        </form>
+        <input list="cores" name="lista">
+        <datalist id="cores"><!--O id de datalist tem que ser igual a descrição de list do input-->
+            <option value="b">Branco</option>
+            <option value="p">Preto</option>
+            <option>Azul</option>
+            <option>Vermelho</option>
+            <option>Preto</option>
+        </datalist>
+        <textarea name="area" cols="50" rows="10" maxlength="50" autofocus></textarea>
+        <input type="submit" name="f_nome">
+    </form>
         <!--
             file
                 multiple (boolean)
@@ -479,33 +494,291 @@
         -->
                                        <!-- TAG  H -->
 
-         <h1>TAG H </h1>
-         <h2>TAG H</h2>
-         <h3>TAG H</h3>
-         <h4>TAG H</h4>
-         <h5>TAG H</h5>
-         <h6>TAG H</h6>
-         <p> Tag para Titulo </p>
+    <h1>TAG H </h1>
+    <h2>TAG H</h2>
+    <h3>TAG H</h3>
+    <h4>TAG H</h4>
+    <h5>TAG H</h5>
+    <h6>TAG H</h6>
+    <p> Tag para Titulo </p>
 
                                    <!-- GOOGLE FONTES -->
 
-          <h1>GOOGLE FONTES </h1>
+    <h1>GOOGLE FONTES </h1>
 
                                  <!-- NOVA TAG HEADER -->
 
-            <h1>NOVA TAG HEADER</h1>
-            <p>Tage usada para cabaçalho  do conteudo</p>
+    <h1>NOVA TAG HEADER</h1>
+    <p>Tage usada para cabaçalho  do conteudo</p>
 
                                   <!-- TAG HR -->
 
-            <h1>TAG HR</h1>
-            <p>Tage usada para fazer uma divizão horizoltao de conteudo</p>
-            <hr>
+    <h1>TAG HR</h1>
+    <p>Tage usada para fazer uma divizão horizoltao de conteudo</p>
+    <hr>
 
                                     <!-- TAG I -->
 
-            <h1>TAG I</h1>
-            <p>Tage usada para tranformar o texto em <i>itálico</i></p>
-            <hr>
+    <h1>TAG I</h1>
+    <p>Tage usada para tranformar o texto em <i>itálico</i></p>
+    <hr>
+
+                                    <!-- TAG IFRAME -->
+
+    <h1>TAG Iframe</h1>
+    <p>Tage usada para criar uma quadro para inserir conteudo</p>
+    <iframe src="https://freebitco.in/?op=home#" sandbox="allow-scripts" name="frame">
+
+    </iframe>
+    <iframe src="Div2.html" sandbox="allow-scripts" >
+
+    </iframe>
+    <hr>
+
+                                    <!-- TAG IMG -->
+
+    <h1>TAG IMG</h1>
+    <p>Tage usada para inserir imagem</p>
+    <img src="imagem/livro.png" alt="livro">
+    <hr>
+
+                                        <!-- TAG KBD -->
+
+    <h1>TAG KBD</h1>
+    <p>Representa a entrada e saida do usuario <kbd>CTRL+C</kbd></p>
+    <hr>
+
+                                            <!-- TAG LIMK -->
+
+    <h1>TAG LINK</h1>
+    <p>Serve para vincular arquivos externos a nossa pagina</p>
+    <hr>  
+            
+                                           <!-- TAG MARK -->
+
+    <h1>TAG MARK</h1>
+    <p>Serve para <mark>marcar</mark> conteudo</p>
+    <hr>
+
+                                           <!-- TAG META -->
+
+    <h1>TAG META</h1>
+    <p> São tags de configuração</p>
+    <hr>
+
+                                          <!-- TAG METER -->
+
+    <h1>TAG METER</h1>
+    <p> São tags de barra de progueção</p>
+    <meter value="5" max="10" min="" high="8" low="3" optimum="5"></meter>
+    <hr>
+
+                                             <!-- NOVA TAG NAV -->
+
+    <h1>NOVA TAG NAV</h1>
+    <p> Tag para criar area de navegação</p>
+    <nav></nav>
+    <hr>
+
+                                            <!-- TAG NOSCRIPT -->
+
+    <h1>TAG NOSCRIPT</h1>
+    <p> usa-se quando não estamos a usar script ou quando não podemos usar o script</p>
+    <hr>
+
+                                            <!-- TAG OBJECT -->
+
+    <h1>TAG OBJECT</h1>
+    <p> usa-se quando pretendemos colocar um arquivo externo a nossa pagina</p>
+    <object name="" width="300" height="300" data="imagem/livro.png" >
+        <param name="src" value="imagem/livro.png">
+    </object>
+    <hr>
+
+                                        <!-- TAG OL -->
+
+    <h1>TAG OL</h1>
+    <p> Tag para usar listas ordenadas</p>
+    <ol start="1" type="1" reversed>
+        <li>Azul</li>
+        <li>Vermelho</li>
+        <li>Preto</li>
+        <li>Branco</li>
+    </ol>
+    <hr>
+
+                                        <!-- TAG OPTGROUP -->
+
+    <h1>TAG OPTGROUP</h1>
+    <p> Organisa os elementos de um select</p>
+
+    <select>
+        <optgroup label="Cores">
+            <option value="azul">Azul</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="preto">Preto</option>
+            <option value="branco">Branco</option>
+        </optgroup>
+        <optgroup label="Paises">
+            <option value="Angola">Angola</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Cabo Verde">Cabo verde</option>
+            <option value="Portugal">Portugal</option>
+        </optgroup>
+    </select>
+        <hr>
+
+                                           <!-- TAG OUTPUT -->
+
+    <h1>TAG OUTPUT</h1>
+    <p> Elemento que recebe o resultado de calculos</p>
+
+    <form oninput="resultado.value=parseInt(a.value)+parseInt(b.value)">
+        0<input type="range" id="a" value="50">1
+        <p>+</p>
+        <input type="number" id="b" value="0">
+        <p>=</p>
+        <output name="resultado" for="a b"></output>
+    </form>
+    <hr>
+
+                                            <!-- TAG PROGRESS -->
+
+     <h1>TAG PROGRESS</h1>
+     <p> Elemento que apresenta uma barra de progresso</p>
+
+     <input type="range"  value="0" min="0" max="100" onchange="p1.value=this.value">
+     <progress value="22" max="100" id="p1"></progress>
+    
+                                                <!-- TAG Q -->
+
+    <h1>TAG Q</h1>
+    <p> esta tag serve para adicionar uma <q cite="">sitação</q></p>
+
+                                                <!-- TAG RUBY E RT -->
+
+    <h1>TAG RUBY E RT</h1>
+    <p> esta tag e para fazer anotações rub</p>
+
+    <ruby>FSC<rt>Fernando da Silva Campos</rt></ruby>
+
+                                                 <!-- TAG SAMP -->
+
+    <h1>TAG SAMP</h1>
+    <p> esta tag representa um <samp>exemplo</samp></p>
+
+                                                <!-- NOVA TAG SECTION -->
+
+    <h1>NOVA TAG SECTION</h1>
+    <p> esta tag serve para agrupar elementos, é uma seção generica</p>
+
+    <section></section>
+
+                                                <!-- TAG SMALL -->
+
+    <h1>TAG SMALL</h1>
+    <p> esta tag serve para formatar o texto em um tamanho <small>menor</small></p>
+
+                                                <!-- TAG SOURCE -->
+
+    <h1>TAG SOURCE</h1>
+    <p> esta tag serve para especificar fontes para as tags</p>
+
+    <video controls width="300">
+        <source src="videos/v1.mp4" type="video/mp4">
+    </video>
+
+    <picture>
+        <source media="(min_width:1000px)" srcset="imagem/livro.png">
+        <img src="imagem/livro.png"> 
+    </picture>
+
+                                            <!-- TAG SPAN -->
+
+    <h1> TAG SPAN</h1>
+    <p> esta tag serve para dar destaque a uma parte do nosso <span>texto</span></p>
+
+                                           <!-- TAG STRONG -->
+
+    <h1> TAG STRONG</h1>
+    <p> esta tag serve para dar destaque a uma parte do nosso <strong>texto</strong></p>
+
+                                            <!-- TAG STYLE -->
+
+    <h1> TAG STYLE</h1>
+    <p> Essa é uma tag de formatação de estilo</p>
+
+                                            <!-- TAG SUB E SUP -->
+
+    <h1> TAG SUB E SUP</h1>
+    <p> serve para <sub>sobscrever</sub> conteudo sub em cima sub  <sup>baixo</sup></p>
+ 
+                                                <!-- TABELA -->
+
+    <h1> TABELA</h1>
+    
+    <table>
+        <tr">
+            <td rowspan="5">
+                A vida exige sacrificio
+            </td>
+        </tr>
+        <thead>
+            <tr>
+                <th>Numero</th>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Fernando</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Pedro</td>
+                <td>217</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Disciplos do SENHOR</td>
+            </tr>
+        </tfoot>
+        <!--border-colapse:colapse; serve para tirar a colisão de borda-->
+    </table>
+
+                                                <!-- TAG TIME -->
+
+    <h1> TAG TIME</h1>
+    <p> serve para especificar data e hora 22/03/2023</p>
+    <p><time datetime="12-25">Natal</time></p>
+
+                                                <!-- TAG UL -->
+
+    <h1> TAG UL</h1>
+    <p> serve para criar uma lista não ordenada</p>
+
+    <ul>
+        <li>Azul</li>
+        <li>Amarelo</li>
+        <li>Verde</li>
+        <li>CAstanho</li>
+        <li>Laranja</li>
+    </ul>
+
+                                                 <!-- TAG VAR -->
+
+    <h1> TAG VAR</h1>
+    <p> esta tag representa uma <var>rariavel</var></p>
+
+                                                <!-- TAG VIDEO -->
+
+    <h1> TAG VIDEO</h1>
+        
+    <video controls width="300" src="videos/v1.mp4" autoplay controls></video>
+       
 </body>
 </html>
